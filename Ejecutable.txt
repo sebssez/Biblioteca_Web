@@ -1,0 +1,13 @@
+1. NODE_OPTIONS=--use-system-ca npm install
+2. npm config set strict-ssl false
+3. npm install
+4. npm config set strict-ssl true
+5. set NODE_OPTIONS=--use-system-ca
+npm install
+6. npm config set strict-ssl false
+7. npm install
+8. set NODE_OPTIONS=
+9. npm config set strict-ssl false
+10. npm cache clean --force
+11. npm install --registry=https://registry.npmjs.org/
+12. npm install --registry=https://r.cnpmjs.org/
