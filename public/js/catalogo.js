@@ -257,3 +257,12 @@
   const initialBook = Number(params.get("libro"));
   if (params.has("libro")) openBook(initialBook, false);
 })();
+
+// Al renderizar la lista de libros dinámicamente:
+libros.forEach((libro, index) => {
+  const card = document.createElement('div');
+  card.className = 'libro-card';
+  card.style.animationDelay = `${index * 0.08}s`; // Entran una por una
+  // ... resto del HTML de la tarjeta ...
+  contenedor.appendChild(card);
+});

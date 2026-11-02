@@ -820,3 +820,23 @@ body {
     font-size: 16px;
   }
 }
+
+table tbody tr {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  transform: scale(1.005);
+}
+
+.row-delete {
+  animation: fadeOutRow 0.4s ease forwards;
+}
+
+@keyframes fadeOutRow {
+  to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}

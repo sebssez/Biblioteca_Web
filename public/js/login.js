@@ -170,3 +170,7 @@
     status.textContent = "";
   });
 })();
+
+const form = document.querySelector('form');
+form.classList.add('shake');
+setTimeout(() => form.classList.remove('shake'), 400);
