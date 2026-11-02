@@ -45,13 +45,10 @@ biblioteca-web/
 ├── .gitignore           # Archivos ignorados por Git
 └── package.json         # Dependencias y scripts del proyecto
 
-<<<<<<< HEAD
-
 ## Frontend de demostración
 
 Por ahora los flujos usan datos locales del navegador. Para probarlos sin MySQL:
 
-```sh
 npm ci
 npm run dev:frontend
 ```
