@@ -1,12 +1,19 @@
+'use strict';
+
 const express = require('express');
 const router = express.Router();
-const prestamosController = require('../controllers/prestamos.controller');
+const controller = require('../controllers/prestamos.controller');
 const { verificarToken, esAdmin } = require('../middlewares/auth.middleware');
 
-// Rutas para Préstamos
-router.get('/', [verificarToken, esAdmin], prestamosController.obtenerPrestamos);
-router.get('/mis-prestamos', verificarToken, prestamosController.obtenerMisPrestamos);
-router.post('/', verificarToken, prestamosController.solicitarPrestamo);
-router.put('/:id/estado', [verificarToken, esAdmin], prestamosController.cambiarEstadoPrestamo);
+// El servidor principal monta este router en /api/prestamos.
+router.get('/', verificarToken, esAdmin, controller.obtenerPrestamos);
+router.get('/mis', verificarToken, controller.obtenerMisPrestamos);
+router.get('/mis-prestamos', verificarToken, controller.obtenerMisPrestamos); // alias anterior
+router.post('/', verificarToken, controller.solicitarPrestamo);
+router.patch('/:id/aprobar', verificarToken, esAdmin, controller.aprobarPrestamo);
+router.put('/:id/aprobar', verificarToken, esAdmin, controller.aprobarPrestamo);
+router.patch('/:id/devolver', verificarToken, esAdmin, controller.devolverPrestamo);
+router.put('/:id/devolver', verificarToken, esAdmin, controller.devolverPrestamo);
+router.put('/:id/estado', verificarToken, esAdmin, controller.cambiarEstadoPrestamo); // compatibilidad
 
 module.exports = router;
