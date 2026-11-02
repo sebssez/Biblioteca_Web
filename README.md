@@ -72,13 +72,13 @@ Abrir `http://127.0.0.1:4173`. Cuentas ficticias: `lector@example.com` y `admin@
 | PUT | /prestamos/:id/devolver | Registrar devolución | Admin |
 
 
-## 👥 Integrantes
+## 👥 Integrantes del Equipo
 
-| Nombre | 
-| Andre Sebastian Espinoza Zea |
-| Jose Enrique Mejia Osis |
-| Daniela Rojas Paucar | 
-| Carlos Enrique Nieblas Tairo |
-| José Manuel Tantalla Puma |
-| Jessica Alessandra Condemayta Alvarez |
->>>>>>> parte2-modelos
+| N.º | Nombre Completo | Rol / Contribución |
+| :---: | :--- | :--- |
+| 1 | Andre Sebastian Espinoza Zea | Backend / Integración |
+| 2 | Jose Enrique Mejia Osis | Backend / Modelos |
+| 3 | Daniela Rojas Paucar | Frontend / Rutas |
+| 4 | Carlos Enrique Nieblas Tairo | Backend / Base de Datos |
+| 5 | José Manuel Tantalla Puma | Módulo de Préstamos |
+| 6 | Jessica Alessandra Condemayta Alvarez | Documentación / Pruebas |
