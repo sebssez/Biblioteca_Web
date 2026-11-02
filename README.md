@@ -58,8 +58,7 @@ npm run dev:frontend
 
 Abrir `http://127.0.0.1:4173`. Cuentas ficticias: `lector@example.com` y `admin@example.com`, clave `Demo123!`. También se puede crear un lector desde registro. No usar credenciales reales.
 
-`npm test` ejecuta las pruebas del frontend. Ver [guía de conexión del backend](docs/BACKEND.md) y [matriz y resultados de pruebas](docs/PRUEBAS_FRONTEND.md). El backend todavía está pendiente; `npm start` no sustituye el servidor estático de esta etapa.
-=======
+
 ## 🔗 Endpoints principales
 
 | Método | Ruta | Descripción | Acceso |
